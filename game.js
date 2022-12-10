@@ -2,16 +2,21 @@ var arrButtonClicked = [];
 var arrUserGold = [];
 var arrComputerGold = [];
 
+// when player clicks the button
   function buttonclick(buttonid)
   {
-    if(arrButtonClicked.indexOf(buttonid) == -1)
+    if(arrButtonClicked.indexOf(buttonid) == -1) 
     { 
       buttonExecute(buttonid, 'user');
 
-      computerbuttonclick();
+     // computerbuttonclick();
+
+      setTimeout(computerbuttonclick, 1000);
+
     }
   }
   
+  // button function 
   function buttonExecute(buttonid, whoami)
   {
     let gold = 'https://content.codecademy.com/courses/learn-phaser/Treasure%20Hunter/gold%20coin%20shine.png';
