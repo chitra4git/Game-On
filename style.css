@@ -6,8 +6,69 @@
 } */
 
 .btn{
-    background-color: rgb(74, 192, 105);
+    /* background-color: rgb(74, 192, 105); */
+    background-image: url(images/dirt.png);
     height: 100px;
     width: 100px;
     text-align: center;
+    background-size: 100%;
+    
 }
+
+#board{
+  position: relative;
+  top: 20%;
+  left: 50%;
+  width: 80%;
+  height: 20% ;
+  
+}
+  
+#player1{
+  position:absolute; left:20px; top:300px; font-size: x-large; color:black
+  
+
+}
+
+#computer{
+  position:absolute; right:20px; top:300px; font-size: x-large; 
+
+}
+
+/* .galleryImg {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  align-content: center;
+  object-position: center;
+  
+} */
+
+#winner{
+  position:absolute; left:20px; top:500px; font-size: x-large;
+}
+
+body{
+  background-color: rgb(244, 227, 76);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  align-content: center;
+  object-position: center;
+  
+}
+
+.welcome{
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+ 

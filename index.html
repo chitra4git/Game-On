@@ -8,7 +8,12 @@
     <title>Treasure Hunter</title>
 </head>
 <body id="body">
-    <div id = "container">
+    <div class="welcome">
+        <h1 id="game-title">TREASURE HUNTER</h1>
+        <p id="game-intro">Embark on a quest to see<br>who finds the most treasure!</p>
+        <button id="next-enter-name" class="main-button" onclick="location.href='\index.html#gameplay-area'">START GAME</button>
+      </div>
+    <div id ="gameplay-area">  
         <table>
             <tr>
                 <td>
@@ -107,24 +112,27 @@
                         </table>
         
                     </div>
+
                 </td>
  
                 <td>
-                    <div>
+                        
+<!--                     
                         <table id="tab">
                             <tr><td><label id="player1">Player 1</label></td></tr>
                             <tr><td><label id="computer">Computer</label></td></tr>
                             <tr><td><label id="winner"></label></td></tr>
-                        </table>
-                    </div>
-                </td>
-            </tr>
-        </table>
-           
+                        </table> -->
 
+       <div class="aside" id="side-bar">
+        
+            <div id="player1">Player 1</div>
+            <div id="computer">Player 2</div>
+            <div id="winner"></div>
+        
+    </div>             
             
     </div>
-
 
     <script src="game.js"></script>
     

@@ -1,6 +1,9 @@
+
 var arrButtonClicked = [];
 var arrUserGold = [];
 var arrComputerGold = [];
+
+
 
 // when player clicks the button
   function buttonclick(buttonid)
@@ -47,7 +50,7 @@ var arrComputerGold = [];
   function showDisplay()
   {
     document.getElementById('player1').innerText = 'Player 1 takes ' + arrUserGold.length + ' gold(s)!';
-    document.getElementById('computer').innerText = `Computer takes ${arrComputerGold.length} gold(s)!`;  
+    document.getElementById('computer').innerText = `Player 2 takes ${arrComputerGold.length} gold(s)!`;  
     if(arrButtonClicked.length == 36)
     {
       if (arrUserGold.length > arrComputerGold.length)
@@ -55,7 +58,7 @@ var arrComputerGold = [];
       else if (arrUserGold.length == arrComputerGold.length)
         document.getElementById('winner').innerText = 'Match tie!';
       else
-        document.getElementById('winner').innerText = 'Computer wins!';
+        document.getElementById('winner').innerText = 'Player 2 wins!';
     }
   }
   
@@ -77,3 +80,4 @@ var arrComputerGold = [];
   function getRandomInt(max) {
     return Math.floor(Math.random() * max);
   }
+
